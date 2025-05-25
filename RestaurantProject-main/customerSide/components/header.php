@@ -22,7 +22,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     echo 'Welcome, ' . $_SESSION["member_name"] . '!';
     echo '<a href="../customerProfile/profile.php">Profile</a>';
     echo '</div>';
-    
+
 }
 
 session_start();
@@ -45,123 +45,103 @@ session_start();
 </head>
 
 <body>
-    <!-- Header -->
+<!-- Header -->
 
-    <section id="header">
-        <div class="header container">
-            <div class="nav-bar">
-                <div class="brand">
-                    <a class="nav-link" href="../home/home.php#hero">
-                        <h1 class="text-center" style="font-family:Copperplate; color:whitesmoke;"> JOHNNY'S</h1><span
+<section id="header">
+    <div class="header container">
+        <div class="nav-bar">
+            <div class="brand">
+                <a class="nav-link" href="../home/home.php#hero">
+                    <h1 class="text-center" style="font-family:Copperplate; color:whitesmoke;"> PAINTED BLACK</h1><span
                             class="sr-only"></span>
-                    </a>
+                </a>
+            </div>
+            <div class="nav-list">
+                <div class="hamburger">
+                    <div class="bar"></div>
                 </div>
-                <div class="nav-list">
-                    <div class="hamburger">
-                        <div class="bar"></div>
-                    </div>
-                    <div class="navbar-container">
+                <div class="navbar-container">
 
-                        <div class="navbar">
-                            <ul>
-<?php
-$current_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-?>
-                                <li><a href="<?= strpos($current_url, "localhost/customerSide/home/home.php") !== false ? "#hero" : "/customerSide/home/home.php" ?>" data-after="Home">Home</a></li>
-<?php
-if (strpos($current_url, "localhost/customerSide/home/home.php") !== false) {
-?>
+                    <div class="navbar">
+                        <ul>
+                            <?php
+                            $current_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                            ?>
+                            <li><a href="<?= strpos($current_url, "localhost/customerSide/home/home.php") !== false ? "#hero" : "/customerSide/home/home.php" ?>" data-after="Home">Home</a></li>
+                            <?php
+                            if (strpos($current_url, "localhost/customerSide/home/home.php") !== false) {
+                                ?>
                                 <li><a href="#projects" data-after="Projects">Menu</a></li>
                                 <li><a href="#about" data-after="About">About</a></li>
                                 <li><a href="#contact" data-after="Contact">Contact</a></li>
-<?php
-} else {
-?>
+                                <?php
+                            } else {
+                                ?>
                                 <li><a href="../CustomerReservation/reservePage.php"
-                                        data-after="Service">Reservation</a></li>
+                                       data-after="Service">Reservation</a></li>
                                 <li><a href="../../adminSide/StaffLogin/login.php" data-after="Staff">Staff</a></li>
-<?php
-}
-?>
+                                <?php
+                            }
+                            ?>
 
 
 
 
-                                <div class="dropdown">
-                                    <button class="dropbtn">ACCOUNT <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                    </button>
-                                    <div class="dropdown-content">
+                            <div class="dropdown">
+                                <button class="dropbtn">ACCOUNT <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                </button>
+                                <div class="dropdown-content">
 
-<?php
+                                    <?php
 
-// Get the member_id from the query parameters
-$account_id = $_SESSION['account_id'] ?? null; // Change this to the way you obtain the member ID
+                                    // Get the member_id from the query parameters
+                                    $account_id = $_SESSION['account_id'] ?? null; // Change this to the way you obtain the member ID
 
-// Create a query to retrieve the member's information
-//$query = "SELECT member_name, points FROM memberships WHERE account_id = $account_id";
+                                    // Create a query to retrieve the member's information
+                                    //$query = "SELECT member_name, points FROM memberships WHERE account_id = $account_id";
+
+                                    // Execute the query
+                                    //$result = mysqli_query($link, $query);
+
+                                    // Check if the user is logged in
+                                    if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true && $account_id != null) {
+                                        $query = "SELECT member_name, points FROM memberships WHERE account_id = $account_id";
 
 // Execute the query
-//$result = mysqli_query($link, $query);
+                                        $result = mysqli_query($link, $query);
+                                        // If logged in, show "Logout" link
+                                        // Check if the query was successful
+                                        if ($result) {
+                                            $row = mysqli_fetch_assoc($result);
 
-// Check if the user is logged in
-if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true && $account_id != null) {
-    $query = "SELECT member_name, points FROM memberships WHERE account_id = $account_id";
-
-// Execute the query
-$result = mysqli_query($link, $query);
-    // If logged in, show "Logout" link
-    // Check if the query was successful
-    if ($result) {
-        // Fetch the member's information
-        $row = mysqli_fetch_assoc($result);
-        
-        if ($row) {
-            $member_name = $row['member_name'];
-            $points = $row['points'];
-            
-            // Calculate VIP status
-            $vip_status = ($points >= 1000) ? 'VIP' : 'Regular';
-            
-            // Define the VIP tooltip text
-            $vip_tooltip = ($vip_status === 'Regular') ? ($points < 1000 ? (1000 - $points) . ' points to VIP ' : 'You are eligible for VIP') : '';
-            
-            // Output the member's information
-            echo "<p class='logout-link' style='font-size:1.3em; margin-left:15px; padding:5px; color:white; '>$member_name</p>";
-            echo "<p class='logout-link' style='font-size:1.3em; margin-left:15px;padding:5px;color:white; '>$points Points </p>";
-            echo "<p class='logout-link' style='font-size:1.3em; margin-left:15px;padding:5px; color:white; '>$vip_status";
-            
-            // Add the tooltip only for Regular status
-            if ($vip_status === 'Regular') {
-                echo " <span class='tooltip'>$vip_tooltip</span>";
-            }
-            
-            echo "</p>";
-        } else {
-            echo "Member not found.";
-        }
-    } else {
-        echo "Error: " . mysqli_error($link);
-    }
-
-    echo '<a class="logout-link" style="color: white; font-size:1.3em;" href="../customerLogin/logout.php">Logout</a>';
-} else {
-    // If not logged in, show "Login" link
-    echo '<a class="signin-link" style="color: white; font-size:15px;" href="../customerLogin/register.php">Sign Up </a> ';
-    echo '<a class="login-link" style="color: white; font-size:15px; " href="../customerLogin/login.php">Log In</a>';
-}
-
-// Close the database connection
-mysqli_close($link);
-?>
+                                            if ($row) {
+                                                $member_name = $row['member_name'];
+                                                echo "<p class='logout-link' style='font-size:1.3em; margin-left:15px; padding:5px; color:white;'>$member_name</p>";
+                                            } else {
+                                                echo "Member not found.";
+                                            }
+                                        }
 
 
-                                    </div>
+                                        echo '<a class="logout-link" style="color: white; font-size:1.3em;" href="../customerLogin/logout.php">Logout</a>';
+                                    } else {
+                                        // If not logged in, show "Login" link
+                                        echo '<a class="signin-link" style="color: white; font-size:15px;" href="../customerLogin/register.php">Sign Up </a> ';
+                                        echo '<a class="login-link" style="color: white; font-size:15px; " href="../customerLogin/login.php">Log In</a>';
+                                    }
+
+                                    // Close the database connection
+                                    mysqli_close($link);
+                                    ?>
+
+
                                 </div>
-                            </ul>
-                        </div>
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End Header -->
+    </div>
+</section>
+<!-- End Header -->

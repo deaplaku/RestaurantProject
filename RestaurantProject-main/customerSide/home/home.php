@@ -133,29 +133,29 @@
   <!-- End menu Section -->
 
 
-  
-  <!-- About Section -->
-<section id="about" ">
-  <div class="about container">
-    <div class="col-right">
-        <h1 class="section-title" >About <span>Us</span></h1>
-        <h2>Johnny's DINING & BAR Company History:</h2>
- <p>Johnny's Dining & Bar is a well-established Western food establishment in the city's heart. Johnny's Dining & Bar has become a popular choice for customers looking to celebrate special occasions or simply enjoy a relaxing meal, with a focus on providing delicious meals and a friendly dining experience.
- </p>
- <p>Johnny's Dining & Bar, as a Western restaurant, offers a diverse menu that caters to a variety of tastes. The menu includes a wide range of options such as bar bites, salads, soups and a variety of main courses. Customers can savour succulent options such as steak and ribs, chicken, lamb, seafood, burgers and sandwiches, pasta, and a variety of delectable side dishes. The menu has been carefully curated to offer a balance of classic favourites and innovative creations, ensuring that every palate is satisfied.
- </p>
- <p>Johnny's Dining & Bar's ability to accommodate customers is one of its distinguishing features. Johnny's Dining & Bar strives to create an inviting and comfortable dining environment, whether guests prefer to walk in or make reservations in advance. The restaurant recognises the significance of creating memorable experiences, particularly for those celebrating special occasions. Johnny's Dining & Bar is a popular choice for families, couples, and groups of friends because of its attentive staff and welcoming atmosphere.
- </p>
- <p>Johnny's Dining & Bar has an inviting outdoor bar that is open seven days a week from 11:00 AM to 10:00 PM in addition to the indoor dining area.This outdoor space provides a relaxed setting for patrons to unwind and socialise while sipping on their favourite drinks and nibbling on bar bites. The bar serves a wide range of beverages, including cocktails, wines, beers and non-alcoholic options.
- </p>
-    
-      </div>
+
+
+    <!-- About Section -->
+    <section id="about" ">
+    <div class="about container">
+        <div class="col-right">
+            <h1 class="section-title" >About <span>Us</span></h1>
+            <h2>THE ART OF CASUAL ITALIAN DINING</h2>
+            <p>Directly from our heritage, experience and years of practice in the best restaurants in Italy and UK.
+            </p>
+            <p>Four Italians, five continents, have different skills but the same philosophy. We opened Painted Black as a home to Rolling Stones and the meaning that going back to black has to us. <br>
+            </p>
+            <p>Restarting from the beginning: The products. Nursing the body and the mind with elaborated simplicity.
+            </p>
+
+
+        </div>
     </div>
-  </section>
-  <!-- End About Section -->
-  
-  
- <!-- Contact Section -->
+    </section>
+    <!-- End About Section -->
+
+
+    <!-- Contact Section -->
 <section id="contact">
   <div class="contact container">
     <div>
@@ -166,7 +166,7 @@
         <div class="contact-info">
           <div class='icon'><img src="../image/icons8-phone-100.png" alt=""/></div>
           <h1>Phone</h1>
-          <h2>+60 886 8786</h2>
+          <h2>+0692166625</h2>
         </div>
       </div>
       
@@ -174,15 +174,15 @@
         <div class="contact-info">
           <div class='icon'><img src="../image/icons8-email-100.png" alt=""/></div>
           <h1>Email</h1>
-          <h2>JohnnysDining@gmail.com</h2> 
+          <h2>info@paintedblack.club</h2>
         </div>
       </div>
       
       <div class="contact-item contact-item-bg">
         <div class="contact-info">
           <div class='icon'> <img src="../image/icons8-home-address-100.png" alt=""/></div>
-          <h1>Address</h1>
-          <h2>Lot 62, Third Floor, Jalan Newton, No.345, Lorong Kluang, Kota Kinabalu, Malaysia, 88000</h2>
+            <h1>Location</h1>
+            <h2>Rruga Hajdar Hidi 5-8, Tiranë 1001 - Albania</h2>
         </div>
       </div>
     </div>
