@@ -14,8 +14,6 @@ $sqlsides = "SELECT * FROM Menu WHERE item_category = 'Side Snacks' ORDER BY ite
 $resultsides = mysqli_query($link, $sqlsides);
 $sides = mysqli_fetch_all($resultsides, MYSQLI_ASSOC);
 
-
-
 // Check if the user is logged in
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     echo '<div class="user-profile">';
@@ -40,8 +38,8 @@ session_start();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <title>PAINTED BLACK</title>
+    <title>Painted Black</title>
+    <link rel="icon" type="image/x-icon" href="../RestaurantProjectImages/paintedLogo.ico">
 </head>
 
 <body>
@@ -67,7 +65,7 @@ session_start();
                             <?php
                             $current_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                             ?>
-                            <li><a href="<?= strpos($current_url, "localhost/customerSide/home/home.php") !== false ? "#hero" : "/customerSide/home/home.php" ?>" data-after="Home">Home</a></li>
+                            <li><a href="#hero" data-after="Home">Home</a></li>
                             <?php
                             if (strpos($current_url, "localhost/customerSide/home/home.php") !== false) {
                                 ?>
@@ -83,60 +81,6 @@ session_start();
                                 <?php
                             }
                             ?>
-
-
-
-
-                            <div class="dropdown">
-                                <button class="dropbtn">ACCOUNT <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                </button>
-                                <div class="dropdown-content">
-
-                                    <?php
-
-                                    // Get the member_id from the query parameters
-                                    $account_id = $_SESSION['account_id'] ?? null; // Change this to the way you obtain the member ID
-
-                                    // Create a query to retrieve the member's information
-                                    //$query = "SELECT member_name, points FROM memberships WHERE account_id = $account_id";
-
-                                    // Execute the query
-                                    //$result = mysqli_query($link, $query);
-
-                                    // Check if the user is logged in
-                                    if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true && $account_id != null) {
-                                        $query = "SELECT member_name, points FROM memberships WHERE account_id = $account_id";
-
-// Execute the query
-                                        $result = mysqli_query($link, $query);
-                                        // If logged in, show "Logout" link
-                                        // Check if the query was successful
-                                        if ($result) {
-                                            $row = mysqli_fetch_assoc($result);
-
-                                            if ($row) {
-                                                $member_name = $row['member_name'];
-                                                echo "<p class='logout-link' style='font-size:1.3em; margin-left:15px; padding:5px; color:white;'>$member_name</p>";
-                                            } else {
-                                                echo "Member not found.";
-                                            }
-                                        }
-
-
-                                        echo '<a class="logout-link" style="color: white; font-size:1.3em;" href="../customerLogin/logout.php">Logout</a>';
-                                    } else {
-                                        // If not logged in, show "Login" link
-                                        echo '<a class="signin-link" style="color: white; font-size:15px;" href="../customerLogin/register.php">Sign Up </a> ';
-                                        echo '<a class="login-link" style="color: white; font-size:15px; " href="../customerLogin/login.php">Log In</a>';
-                                    }
-
-                                    // Close the database connection
-                                    mysqli_close($link);
-                                    ?>
-
-
-                                </div>
-                            </div>
                         </ul>
                     </div>
                 </div>

@@ -29,12 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($staff_result->num_rows === 1) {
             $staff_row = $staff_result->fetch_assoc();
             $logged_staff_name = $staff_row['staff_name']; // Get staff_name
-            //$message = "Login successful.<br> Welcome to Johnny's Staff Panel.";
-            //$iconClass = "fa-check-circle";
-            //$cardClass = "alert-success";
-            //$bgColor = "#D4F4DD";
-            //$direction = "../panel/pos-panel.php"; // Success, go to staff panel
-            
+
             // After successful login, store staff_name in session
             $_SESSION['logged_account_id'] = $provided_account_id;
             $_SESSION['logged_staff_name'] = $logged_staff_name;

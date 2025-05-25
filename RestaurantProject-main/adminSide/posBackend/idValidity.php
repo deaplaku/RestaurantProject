@@ -84,8 +84,6 @@ session_start(); // Ensure session is started
                 echo "Staff, member, and reservation are valid.";
                 echo '</div>';
                 echo '<div class="mt-3">';
-                echo '<a href="posCashPayment.php?bill_id=' . $bill_id . '&staff_id=' . $staffId . '&member_id=' . $memberId . '&reservation_id=' . $reservationId . '" class="btn btn-success">Cash</a>';
-                echo '<a href="posCardPayment.php?bill_id=' . $bill_id . '&staff_id=' . $staffId . '&member_id=' . $memberId . '&reservation_id=' . $reservationId . '" class="btn btn-primary ml-2">Credit Card</a>';
                 echo '</div>';
             } else {
                 echo "Invalid staff, member, or reservation.";

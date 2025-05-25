@@ -5,7 +5,7 @@ require_once "../config.php";
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $table_id = intval($_GET['id']);
 } else {
-    header("Location: ../panel/account-panel.php");
+    header("Location: ../panel/profiles-panel.php");
     exit(); // Make sure to exit after redirect
 }
 
@@ -52,7 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
 
                     <button class="btn btn-light" type="submit" name="submit" value="submit">Delete Account</button>
-                    <a class="btn btn-danger" href="../panel/account-panel.php" >Cancel</a>
                 </form>
             </div>
         </div>

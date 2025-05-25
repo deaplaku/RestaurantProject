@@ -22,7 +22,7 @@ if (isset($_GET['id'])) {
         // Execute the DELETE query
         if (mysqli_stmt_execute($stmt)) {
             // Account successfully deleted, redirect back to the main page
-            header("location: ../panel/account-panel.php");
+            header("location: ../panel/profiles-panel.php");
             exit();
         } else {
             // Error occurred during execution, display an error message
