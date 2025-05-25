@@ -10,8 +10,8 @@
     </video>
     <div class="hero container" style="position: relative; z-index: 1;">
         <div>
-            <h1><strong><h1 class="text-center" style="font-family:Copperplate; color:whitesmoke;"> JOHNNY'S</h1><span></span></strong></h1>
-            <h1><strong style="color:white;">DINING & BAR<span></span></strong></h1>
+            <h1><strong><h1 class="text-center" style="font-family:Copperplate; color:whitesmoke;"> PAINTED</h1><span></span></strong></h1>
+            <h1><strong style="color:white;">BLACK<span></span></strong></h1>
             <a href="#projects" type="button" class="cta">MENU</a>
         </div>
     </div>

@@ -76,15 +76,3 @@
 ![alt text](https://github.com/Brynlai/RestaurantProject/blob/main/RestaurantProjectImages/profilespanel.png?raw=true)
 
 
-
-## Contributors
-
-| Name | Github |
-|---|---|
-| Bryan | https://github.com/BryanTheLai |
-| Yong | https://github.com/ahhyang |
-| Kevin | https://github.com/kevin07212004 |
-| Edzer | https://github.com/edsaur |
-
-## If you want to put a password for the database, change the config.php files.
-
