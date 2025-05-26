@@ -39,7 +39,7 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Painted Black</title>
-    <link rel="icon" type="image/x-icon" href="../RestaurantProjectImages/paintedLogo.ico">
+    <link rel="icon" type="image/x-icon" href="../RestaurantProjectImages/paintedLogo.icos">
 </head>
 
 <body>
