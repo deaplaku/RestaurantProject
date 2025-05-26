@@ -15,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $provided_password = $_POST['password']; // 12345
     $uniqueString = $provided_account_id . $provided_password;
 
-
     if ($uniqueString == "9999912345") {
         echo ' Correct';
         header("Location: ../reservationsCrud/deleteReservation.php?id=".$table_id ."");
