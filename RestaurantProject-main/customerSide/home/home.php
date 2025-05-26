@@ -129,7 +129,7 @@ include_once('../components/header.php') ?>
                     <?php foreach ($mainDishes as $item): ?>
                         <p>
                             <span class="item-name"> <strong><?php echo $item['item_name']; ?></strong></span>
-                            <span class="item-price">RM<?php echo $item['item_price']; ?></span><br>
+                            <span class="item-price">LEK<?php echo $item['item_price']; ?></span><br>
                             <span class="item_type"><i><?php echo $item['item_type']; ?></i></span>
                         <hr>
 
@@ -146,7 +146,7 @@ include_once('../components/header.php') ?>
                     <?php foreach ($sides as $item): ?>
                         <p>
                             <span class="item-name"> <strong><?php echo $item['item_name']; ?></strong></span>
-                            <span class="item-price">RM<?php echo $item['item_price']; ?></span><br>
+                            <span class="item-price">LEK<?php echo $item['item_price']; ?></span><br>
                             <span class="item_type"><i><?php echo $item['item_type']; ?></i></span>
                         <hr>
                         </p>
@@ -162,7 +162,7 @@ include_once('../components/header.php') ?>
                     <?php foreach ($drinks as $item): ?>
                         <p>
                             <span class="item-name"> <strong><?php echo $item['item_name']; ?></strong></span>
-                            <span class="item-price">RM<?php echo $item['item_price']; ?></span><br>
+                            <span class="item-price">LEK<?php echo $item['item_price']; ?></span><br>
                             <span class="item_type"><i><?php echo $item['item_type']; ?></i></span>
                         <hr>
                         </p>
@@ -178,7 +178,7 @@ include_once('../components/header.php') ?>
                     <?php foreach ($mainDishes as $item): ?>
                         <p>
                             <span class="item-name"> <strong><?php echo $item['item_name']; ?></strong></span>
-                            <span class="item-price">RM<?php echo $item['item_price']; ?></span><br>
+                            <span class="item-price">LEK<?php echo $item['item_price']; ?></span><br>
                             <span class="item_type"><i><?php echo $item['item_type']; ?></i></span>
                         <hr>
                         </p>
@@ -191,7 +191,7 @@ include_once('../components/header.php') ?>
                     <?php foreach ($sides as $item): ?>
                         <p>
                             <span class="item-name"> <strong><?php echo $item['item_name']; ?></strong></span>
-                            <span class="item-price">RM<?php echo $item['item_price']; ?></span><br>
+                            <span class="item-price">LEK<?php echo $item['item_price']; ?></span><br>
                             <span class="item_type"><i><?php echo $item['item_type']; ?></i></span>
                         <hr>
                         </p>
@@ -204,7 +204,7 @@ include_once('../components/header.php') ?>
                     <?php foreach ($drinks as $item): ?>
                         <p>
                             <span class="item-name"> <strong><?php echo $item['item_name']; ?></strong></span>
-                            <span class="item-price">RM<?php echo $item['item_price']; ?></span><br>
+                            <span class="item-price">LEK<?php echo $item['item_price']; ?></span><br>
                             <span class="item_type"><i><?php echo $item['item_type']; ?></i></span>
                         <hr>
                         </p>

@@ -33,44 +33,16 @@ require_once '../posBackend/checkIfLoggedIn.php';
                 <?php
                 // Include config file
                 require_once "../config.php";
-
                 if (isset($_POST['search'])) {
                     if (!empty($_POST['search'])) {
                         $search = $_POST['search'];
-
-                        // Modified query to search staff members by staff_name or staff_id
-                        /*
-                        $sql = "SELECT *
-                                FROM Staffs stf
-                                INNER JOIN Accounts acc ON stf.account_id = acc.account_id
-                                WHERE stf.staff_name LIKE '%$search%' OR stf.staff_id = '$search'
-                                ORDER BY stf.staff_id";
-                         * 
-                         */
                         $sql = "SELECT * FROM Staffs WHERE staff_name LIKE '%$search%' OR staff_id = '$search' ORDER BY account_id";
                     } else {
-                        // Default query to fetch all staff members
-                        /*
-                        $sql = "SELECT *
-                                FROM Staffs stf
-                                INNER JOIN Accounts acc ON stf.account_id = acc.account_id
-                                ORDER BY stf.staff_id";
-                         * 
-                         */
                         $sql = "SELECT * FROM Staffs ORDER BY account_id";
                     }
                 } else {
-                    // Default query to fetch all staff members
-                    /*
-                    $sql = "SELECT *
-                            FROM Staffs stf
-                            INNER JOIN Accounts acc ON stf.account_id = acc.account_id
-                            ORDER BY stf.staff_id";
-                     * 
-                     */
                     $sql = "SELECT * FROM Staffs ORDER BY account_id";
                 }
-
 
                 if ($result = mysqli_query($link, $sql)) {
                     if (mysqli_num_rows($result) > 0) {

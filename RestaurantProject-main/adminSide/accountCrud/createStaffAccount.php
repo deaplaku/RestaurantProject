@@ -36,7 +36,7 @@ $input_password = $password_err = $password = "";
         
         <div class="form-group">
             <label for="email" class="form-label">Email :</label>
-            <input type="text" name="email" placeholder="johnny12@dining.bar.com" class="form-control <?php echo !$emailErr ?: 'is-invalid'; ?>" id="email" required value="<?php echo $email; ?>"><br>
+            <input type="text" name="email" placeholder="paintedblack@club.com" class="form-control <?php echo !$emailErr ?: 'is-invalid'; ?>" id="email" required value="<?php echo $email; ?>"><br>
             <div id="validationServerFeedback" class="invalid-feedback">
                 Please provide a valid email.
             </div>

@@ -1,5 +1,6 @@
 <?php
 // Check if setup has already been completed
+
 if (file_exists('setup_completed.flag')) {
     echo "Setup has already been completed. The SQL setup won't run again.";
 } else {

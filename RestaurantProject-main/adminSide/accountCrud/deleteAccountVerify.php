@@ -5,7 +5,7 @@ require_once "../config.php";
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $table_id = intval($_GET['id']);
 } else {
-    header("Location: ../panel/profiles-panel.php");
+    header("Location: ../panel/staff-panel.php");
     exit(); // Make sure to exit after redirect
 }
 
