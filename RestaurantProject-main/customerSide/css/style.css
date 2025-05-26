@@ -41,6 +41,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	min-height: 20vh;
 }
 
 img {
@@ -596,6 +597,7 @@ p {
 
 /* end why us section*/
 
+
 /* contact Section */
 #contact .contact {
 	flex-direction: column;
@@ -739,6 +741,9 @@ p {
 	/* End Services Section */
 
 	/* Project */
+	#projects h1{
+		color: white;
+	}
 	#projects .project-item {
 		flex-direction: row;
 	}

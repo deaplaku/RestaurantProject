@@ -1,27 +1,5 @@
 <!-- Footer -->
-<section id="footer">
-    <div class="footer container">
-        <div class="brand">
-            <h1>CONTACT US</h1>
-        </div>
-        <h2>Follow our Socials</h2>
-        <div class="social-icon">
-            <div class="social-item">
-                <a href="https://www.instagram.com/paintedblacktirana/?hl=en"><img
-                            src="https://img.icons8.com/color/48/instagram-new.png" alt="instagram-new"/></a>
-            </div>
-            <div class="social-item">
-                <a href="https://www.tiktok.com/@paintedblacktirana"><img
-                            src="https://img.icons8.com/color/48/tiktok.png" alt="tiktok-new"/></a>
-            </div>
-            <div class="social-item">
-                <a href="https://www.tripadvisor.com/Attraction_Review-g294446-d25560298-Reviews-Painted_Black_The_Italian_Gastro_Club-Tirana_Tirana_County.html"><img
-                            src="https://imgur.com/SSzgF1q.png" alt="tripadvisor-new"/></a>
-            </div>
-        </div>
-        <p>© <?= date('Y') ?> Painted Black</p>
-    </div>
-</section>
+
 <!-- End Footer -->
 <script src="../js/app.js"></script>
 <style type="text/css">

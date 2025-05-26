@@ -22,7 +22,6 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     echo '</div>';
 
 }
-
 session_start();
 ?>
 <!DOCTYPE html>
@@ -39,13 +38,12 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Painted Black</title>
-    <link rel="icon" type="image/x-icon" href="../RestaurantProjectImages/paintedLogo.icos">
+    <link rel="icon" type="image/x-icon" href="../../paintedLogo.ico">
 </head>
 
 <body>
 <!-- Header -->
-
-<section id="header">
+<section id="header" style="background-color: black;">
     <div class="header container">
         <div class="nav-bar">
             <div class="brand">
