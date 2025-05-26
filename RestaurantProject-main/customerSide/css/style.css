@@ -477,6 +477,13 @@ p {
 /* End Projects section */
 
 /* About Section */
+
+.about-section {
+	background-color: black;
+	color: white;
+	padding: 50px 20px;
+}
+
 #about .about {
 	display: flex; /* add this */
 	flex-direction: row; /* change from column-reverse to row */
