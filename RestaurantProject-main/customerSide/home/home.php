@@ -1,12 +1,12 @@
-<?php include_once('../components/header.php')?>
+<?php
+/** @var array $mainDishes */
+/** @var array $sides */
+/** @var array $drinks */
+include_once('../components/header.php')?>
 <!-- Hero Section with Video Background and Text Overlay -->
 <section id="hero" style="position: relative;">
     <video autoplay loop muted playsinline poster="your-poster-image.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
         <source src="../image/SteakOnGrillCloseup.mp4" type="video/mp4">
-        <!-- Add additional source elements for 
-        1.  SteakOnGrillCloseup
-
-        other video formats if needed -->
     </video>
     <div class="hero container" style="position: relative; z-index: 1;">
         <div>
@@ -18,8 +18,6 @@
 </section>
 <!-- End Hero Section -->
   
-  
-  
   <!-- menu Section -->
   <section id="projects">
     <div class="projects container">
@@ -27,7 +25,6 @@
         <h1 class="section-title">Me<span>n</span>u</h1>
       </div>
      
-        
        <select style="text-align:center;" id="menu-category" class="menu-category">
         <option value="blue">ALL ITEMS</option>
         <option value="yellow">MAIN DISHES</option>
@@ -68,7 +65,6 @@
       </div>
     </div>
         
-      
       
     <div class="green msg">
         <div></div>
