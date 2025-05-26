@@ -76,6 +76,7 @@ session_start();
                                 <li><a href="../CustomerReservation/reservePage.php"
                                        data-after="Service">Reservation</a></li>
                                 <li><a href="../../adminSide/StaffLogin/login.php" data-after="Staff">Staff</a></li>
+                                <li><a href="https://wolt.com/en/alb/tirana/restaurant/painted-black">Order Online</a></li>
                                 <?php
                             }
                             ?>

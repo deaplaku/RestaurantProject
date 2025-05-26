@@ -1,7 +1,4 @@
 <?php
-
-?>
-<?php
 /** @var array $mainDishes */
 /** @var array $sides */
 /** @var array $drinks */
@@ -23,7 +20,6 @@ include_once('../components/header.php') ?>
         </div>
     </section>
     <!-- End Hero Section -->
-
 
     <!-- About Section -->
     <section id="about" class="about-section">
