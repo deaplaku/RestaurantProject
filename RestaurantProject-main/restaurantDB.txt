@@ -62,7 +62,7 @@ VALUES
 
 INSERT INTO Menu (item_id, item_name, item_type, item_category, item_price, item_description)
 VALUES
-  ('MD1', 'Prime Rib Steak', 'Steak & Ribs', 'Main Dishes', 96,'300g'),
+  ('MD1', 'Italian Meatball', 'Steak & Ribs', 'Main Dishes', 590 LEK,'300g'),
   ('MD2', 'Sirloin Steak', 'Steak & Ribs', 'Main Dishes', 79, '230g'),
   ('MD3', 'Ribeye Steak', 'Steak & Ribs', 'Main Dishes', 96, '230g'),
   ('MD4', 'BBQ Ribs', 'Steak & Ribs', 'Main Dishes', 59, '400g'),
@@ -184,26 +184,12 @@ VALUES ('John Smith', 'Waiter', 1),
 INSERT INTO Reservations (reservation_id, customer_name, table_id, reservation_time, reservation_date, head_count, special_request)
 VALUES 
 (2220231, 'Abbel Tu Far Behind', 1, '22:00:34', '2023-09-28', 1, 'Prepare Panadol for me'),
-(2220232, 'Abignaile Lin Downney Jr', 2, '22:00:34', '2023-09-29', 1, 'Default Special Request'),
+(2220232, 'Abignaile Lin Downney Jr', 2, '22:00:34', '2023-09-29', 1, '1 baby'),
 (1920233, 'Jamie Mustafa', 3, '19:30:00', '2023-09-30', 2, 'Vegan options needed'),
 (2020234, 'Luke Gun Slinger', 4, '20:00:00', '2023-09-30', 3, 'Birthday celebration'),
 (1920235, 'Johny Rings', 5, '19:45:00', '2023-10-01', 2, 'Quiet corner, please'),
 (1820237, 'Jean Ng', 7, '18:30:00', '2023-10-03', 2, 'Allergies: peanuts'),
 (1920239, 'Taylor Swift', 9, '19:15:00', '2023-10-05', 2, 'Surprise dessert for anniversary'),
-(1111111, 'Default', 9, '19:15:00', '2023-10-05', 2, 'Description'),
+(1111111, 'Default', 9, '19:15:00', '2023-10-05', 2, 'Not close to the door'),
 (14202310, 'Bruce Lee', 10, '14:45:00', '2023-10-06', 3, 'Window seat, if available');
-
-INSERT INTO card_payments (card_id, account_holder_name, card_number, expiry_date, security_code)
-VALUES
-('1', 'John Smith', '1234567890123456', '10/15', '123'),
-('2', 'Susan Johnson', '2345678901234567', '10/24', '456'),
-('3', 'James Brown', '3456789012345678', '09/30', '789'),
-('4', 'Alice Davis', '4567890123456789', '09/28', '321'),
-('5', 'Mike Wilson', '5678901234567890', '09/29', '654'),
-('6', 'Robert Miller', '7890123456789012', '10/19', '123'),
-('7', 'Abbel TuTuTu', '1234123412341234', '10/25', '654'),
-('8', 'Abignail Downey', '2345234523452345', '10/24', '987'),
-('9', 'Jamie Mustafa', '3456345634563456', '09/23', '123'),
-('10', 'Luke Gun Slinger', '4567456745674567', '09/22', '456');
-
 

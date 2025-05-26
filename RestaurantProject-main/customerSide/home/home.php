@@ -10,8 +10,8 @@
     </video>
     <div class="hero container" style="position: relative; z-index: 1;">
         <div>
-            <h1><strong><h1 class="text-center" style="font-family:Copperplate; color:whitesmoke;"> PAINTED</h1><span></span></strong></h1>
-            <h1><strong style="color:white;">BLACK<span></span></strong></h1>
+            <h1><strong><h1 class="text-center" style="font-family:Copperplate; color:whitesmoke;"> PAINTED BLACK</h1><span></span></strong></h1>
+            <h1><strong style="color:white;">RESTAURANT<span></span></strong></h1>
             <a href="#projects" type="button" class="cta">MENU</a>
         </div>
     </div>
@@ -133,29 +133,28 @@
   <!-- End menu Section -->
 
 
+  
+  <!-- About Section -->
+<section id="about" ">
+  <div class="about container">
+    <div class="col-right">
+        <h1 class="section-title" >About <span>Us</span></h1>
+        <h2>PAINTED BLACK TIRANA</h2>
+ <p>Directly from our heritage, experience and years of practice in the best restaurants in Italy and UK.
+ </p>
+ <p>JFour Italians, five continents, have different skills but the same philosophy. We opened Painted Black as a home to Rolling Stones and the meaning that going back to black has to us. <br>
+ </p>
+ <p>Restarting from the beginning: The products. Nursing the body and the mind with elaborated simplicity.
+ </p>
 
-
-    <!-- About Section -->
-    <section id="about" ">
-    <div class="about container">
-        <div class="col-right">
-            <h1 class="section-title" >About <span>Us</span></h1>
-            <h2>THE ART OF CASUAL ITALIAN DINING</h2>
-            <p>Directly from our heritage, experience and years of practice in the best restaurants in Italy and UK.
-            </p>
-            <p>Four Italians, five continents, have different skills but the same philosophy. We opened Painted Black as a home to Rolling Stones and the meaning that going back to black has to us. <br>
-            </p>
-            <p>Restarting from the beginning: The products. Nursing the body and the mind with elaborated simplicity.
-            </p>
-
-
-        </div>
+    
+      </div>
     </div>
-    </section>
-    <!-- End About Section -->
-
-
-    <!-- Contact Section -->
+  </section>
+  <!-- End About Section -->
+  
+  
+ <!-- Contact Section -->
 <section id="contact">
   <div class="contact container">
     <div>
@@ -166,7 +165,7 @@
         <div class="contact-info">
           <div class='icon'><img src="../image/icons8-phone-100.png" alt=""/></div>
           <h1>Phone</h1>
-          <h2>+0692166625</h2>
+          <h2>+069 216 6625</h2>
         </div>
       </div>
       
@@ -181,8 +180,8 @@
       <div class="contact-item contact-item-bg">
         <div class="contact-info">
           <div class='icon'> <img src="../image/icons8-home-address-100.png" alt=""/></div>
-            <h1>Location</h1>
-            <h2>Rruga Hajdar Hidi 5-8, Tiranë 1001 - Albania</h2>
+          <h1>Address</h1>
+          <h2>Rruga Hajdar Hidi 5-8, Tiranë 1001 - Albania</h2>
         </div>
       </div>
     </div>
