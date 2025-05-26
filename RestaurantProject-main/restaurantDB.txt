@@ -62,11 +62,12 @@ VALUES
 
 INSERT INTO Menu (item_id, item_name, item_type, item_category, item_price, item_description)
 VALUES
-  ('MD1', 'Italian Meatball', 'Steak & Ribs', 'Main Dishes', 590 LEK,'300g'),
-  ('MD2', 'Sirloin Steak', 'Steak & Ribs', 'Main Dishes', 79, '230g'),
-  ('MD3', 'Ribeye Steak', 'Steak & Ribs', 'Main Dishes', 96, '230g'),
-  ('MD4', 'BBQ Ribs', 'Steak & Ribs', 'Main Dishes', 59, '400g'),
-  ('MD5', 'Grilled Chicken ½ Bird', 'Chicken', 'Main Dishes', 33, '½ Bird'),
+  ('MD1', 'Italian Meatballs', 'Steak & Ribs', 'Main Dishes', 590,'Salame, Finocchiona, Prosciutto Crudo served with Berat Olives in Aglio Olio Peperoncino marination and warm Focaccia Bites'),
+  ('MD2', 'Chef’s Salad', 'Steak & Ribs', 'Main Dishes', 600, 'Rocket Salad with Fennel, Oranges, Berat’s Olives and Red Onion in Homemade Sweet and Sour Sauce
+                                                              Add Mozzarella Fior di Latte for 300 LEK'),
+  ('MD3', 'Bresaola della Valtellina', 'Steak & Ribs', 'Main Dishes', 1350, 'Punta d'Anca Bresaolo DOP served with homemade preserved mushrooms, wild rocket, and parmesan'),
+  ('MD4', 'Burrata con Panzanella Toscana', 'Steak & Ribs', 'Main Dishes', 1350, 'Burrata with Panzanella Toscana, Basil Oil, Cucumber, Red Onions'),
+  ('MD5', 'Signature | Prosciutto Crudo e Melone with Truffle Burrata', 'Chicken', 'Main Dishes', 1350, 'Crudo Ham and Melon, Truffle Stracciatella di Burrata'),
   ('MD6', 'Southern Fried Chicken ½ Bird', 'Chicken', 'Main Dishes', 33, '½ Bird'),
   ('MD7', 'Pan Seared Chicken' , 'Chicken', 'Main Dishes', 28, '300g'),
   ('MD8', 'Chicken Chop', 'Chicken', 'Main Dishes', 28, '300g'),

@@ -121,10 +121,10 @@ include_once('../components/header.php') ?>
                 <option value="green">DRINKS</option>
             </select>
 
-            <div class="yellow msg">
+            <div class="yellow msg" style="background-color: black">
 
                 <div></div>
-                <div class="mainDish">
+                <div class="mainDish" style="background-color: black">
                     <h1 style="text-align:center;">MAIN DISHES</h1>
                     <?php foreach ($mainDishes as $item): ?>
                         <p>
@@ -139,9 +139,9 @@ include_once('../components/header.php') ?>
             </div>
 
 
-            <div class="red msg">
+            <div class="red msg" style="background-color: black">
                 <div></div>
-                <div class="sideDish">
+                <div class="sideDish" style="background-color: black">
                     <h1 style="text-align:center">SIDE DISHES</h1>
                     <?php foreach ($sides as $item): ?>
                         <p>
@@ -155,7 +155,7 @@ include_once('../components/header.php') ?>
             </div>
 
 
-            <div class="green msg">
+            <div class="green msg" style="background-color: black">
                 <div></div>
                 <div class="drinks">
                     <h1 style="text-align:center">DRINKS</h1>
@@ -171,7 +171,7 @@ include_once('../components/header.php') ?>
             </div>
 
 
-            <div class="blue msg">
+            <div class="blue msg" style="background-color: black">
 
                 <div class="mainDish">
                     <h1 style="text-align:center">MAIN DISHES</h1>

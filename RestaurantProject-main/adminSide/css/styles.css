@@ -11242,8 +11242,3 @@ body {
   font-size: 0.75rem;
   border-radius: 0.375rem !important;
 }
-
-.table, .datatable-table {
-  --bs-table-color: #ffffff;
-  color: var(--bs-table-color);
-}
